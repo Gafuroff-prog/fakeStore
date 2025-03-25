@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1 class="logo">FakeStore</h1>
+        
+    </div>
+
+    <div class="search_inputs">
+        <input type="search" id="search" placeholder="Qidirish.">
+        
+        <label for="priceRange">Narx: <span id="priceValue">1000</span>$</label>
+        <input type="range" id="priceRange" min="0" max="1000" value="1000">
+
+        <select id="categoryFilter">
+            <option value="all">Categories</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's Clothing</option>
+            <option value="jewelery">Jewelery</option>
+            <option value="electronics">electronics</option>
+        </select>
+        
+    </div>
+
+    <div id="products" class="product-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
